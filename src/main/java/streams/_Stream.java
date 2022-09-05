@@ -27,7 +27,7 @@ public class _Stream {
         Predicate<Person> personPredicate = person -> PREFER_NOT_TO_SAY.equals(person.gender);
         boolean containsOnlyFemales = people.stream()
                 .noneMatch(personPredicate);
-        
+
         System.out.println(containsOnlyFemales);
 
     }
